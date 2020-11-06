@@ -13,7 +13,20 @@
 		847349422554F64B009E7C66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847349402554F64B009E7C66 /* Main.storyboard */; };
 		847349442554F64D009E7C66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847349432554F64D009E7C66 /* Assets.xcassets */; };
 		847349472554F64D009E7C66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847349452554F64D009E7C66 /* LaunchScreen.storyboard */; };
+		847349562554F65C009E7C66 /* Parsing_JSON_UrlSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847349552554F65C009E7C66 /* Parsing_JSON_UrlSessionTests.swift */; };
+		847349602554F6F0009E7C66 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473495F2554F6F0009E7C66 /* Station.swift */; };
+		847349642554F927009E7C66 /* APIClinet .swift in Sources */ = {isa = PBXBuildFile; fileRef = 847349632554F927009E7C66 /* APIClinet .swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		847349582554F65C009E7C66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8473492F2554F64B009E7C66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 847349362554F64B009E7C66;
+			remoteInfo = "Parsing-JSON-UrlSession";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		847349372554F64B009E7C66 /* Parsing-JSON-UrlSession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parsing-JSON-UrlSession.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +37,22 @@
 		847349432554F64D009E7C66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		847349462554F64D009E7C66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		847349482554F64D009E7C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847349532554F65C009E7C66 /* Parsing-JSON-UrlSessionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Parsing-JSON-UrlSessionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		847349552554F65C009E7C66 /* Parsing_JSON_UrlSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing_JSON_UrlSessionTests.swift; sourceTree = "<group>"; };
+		847349572554F65C009E7C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8473495F2554F6F0009E7C66 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		847349632554F927009E7C66 /* APIClinet .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIClinet .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		847349342554F64B009E7C66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847349502554F65C009E7C66 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				847349392554F64B009E7C66 /* Parsing-JSON-UrlSession */,
+				847349542554F65C009E7C66 /* Parsing-JSON-UrlSessionTests */,
 				847349382554F64B009E7C66 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				847349372554F64B009E7C66 /* Parsing-JSON-UrlSession.app */,
+				847349532554F65C009E7C66 /* Parsing-JSON-UrlSessionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,12 +86,23 @@
 				8473493A2554F64B009E7C66 /* AppDelegate.swift */,
 				8473493C2554F64B009E7C66 /* SceneDelegate.swift */,
 				8473493E2554F64B009E7C66 /* ViewController.swift */,
+				847349632554F927009E7C66 /* APIClinet .swift */,
+				8473495F2554F6F0009E7C66 /* Station.swift */,
 				847349402554F64B009E7C66 /* Main.storyboard */,
 				847349432554F64D009E7C66 /* Assets.xcassets */,
 				847349452554F64D009E7C66 /* LaunchScreen.storyboard */,
 				847349482554F64D009E7C66 /* Info.plist */,
 			);
 			path = "Parsing-JSON-UrlSession";
+			sourceTree = "<group>";
+		};
+		847349542554F65C009E7C66 /* Parsing-JSON-UrlSessionTests */ = {
+			isa = PBXGroup;
+			children = (
+				847349552554F65C009E7C66 /* Parsing_JSON_UrlSessionTests.swift */,
+				847349572554F65C009E7C66 /* Info.plist */,
+			);
+			path = "Parsing-JSON-UrlSessionTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +125,24 @@
 			productReference = 847349372554F64B009E7C66 /* Parsing-JSON-UrlSession.app */;
 			productType = "com.apple.product-type.application";
 		};
+		847349522554F65C009E7C66 /* Parsing-JSON-UrlSessionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8473495A2554F65C009E7C66 /* Build configuration list for PBXNativeTarget "Parsing-JSON-UrlSessionTests" */;
+			buildPhases = (
+				8473494F2554F65C009E7C66 /* Sources */,
+				847349502554F65C009E7C66 /* Frameworks */,
+				847349512554F65C009E7C66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				847349592554F65C009E7C66 /* PBXTargetDependency */,
+			);
+			name = "Parsing-JSON-UrlSessionTests";
+			productName = "Parsing-JSON-UrlSessionTests";
+			productReference = 847349532554F65C009E7C66 /* Parsing-JSON-UrlSessionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +154,10 @@
 				TargetAttributes = {
 					847349362554F64B009E7C66 = {
 						CreatedOnToolsVersion = 12.1;
+					};
+					847349522554F65C009E7C66 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 847349362554F64B009E7C66;
 					};
 				};
 			};
@@ -115,6 +175,7 @@
 			projectRoot = "";
 			targets = (
 				847349362554F64B009E7C66 /* Parsing-JSON-UrlSession */,
+				847349522554F65C009E7C66 /* Parsing-JSON-UrlSessionTests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +191,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		847349512554F65C009E7C66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,11 +207,29 @@
 			files = (
 				8473493F2554F64B009E7C66 /* ViewController.swift in Sources */,
 				8473493B2554F64B009E7C66 /* AppDelegate.swift in Sources */,
+				847349602554F6F0009E7C66 /* Station.swift in Sources */,
 				8473493D2554F64B009E7C66 /* SceneDelegate.swift in Sources */,
+				847349642554F927009E7C66 /* APIClinet .swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8473494F2554F65C009E7C66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847349562554F65C009E7C66 /* Parsing_JSON_UrlSessionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		847349592554F65C009E7C66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 847349362554F64B009E7C66 /* Parsing-JSON-UrlSession */;
+			targetProxy = 847349582554F65C009E7C66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		847349402554F64B009E7C66 /* Main.storyboard */ = {
@@ -319,6 +405,46 @@
 			};
 			name = Release;
 		};
+		8473495B2554F65C009E7C66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83DYP84L8W;
+				INFOPLIST_FILE = "Parsing-JSON-UrlSessionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Tsering-Lama.Parsing-JSON-UrlSessionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Parsing-JSON-UrlSession.app/Parsing-JSON-UrlSession";
+			};
+			name = Debug;
+		};
+		8473495C2554F65C009E7C66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83DYP84L8W;
+				INFOPLIST_FILE = "Parsing-JSON-UrlSessionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Tsering-Lama.Parsing-JSON-UrlSessionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Parsing-JSON-UrlSession.app/Parsing-JSON-UrlSession";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -336,6 +462,15 @@
 			buildConfigurations = (
 				8473494C2554F64D009E7C66 /* Debug */,
 				8473494D2554F64D009E7C66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8473495A2554F65C009E7C66 /* Build configuration list for PBXNativeTarget "Parsing-JSON-UrlSessionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8473495B2554F65C009E7C66 /* Debug */,
+				8473495C2554F65C009E7C66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
