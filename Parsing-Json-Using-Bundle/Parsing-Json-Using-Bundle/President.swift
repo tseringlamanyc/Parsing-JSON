@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct President: Decodable {
+struct President: Decodable, Hashable {
     let number: Int
     let name: String
     let birthYear: Int
