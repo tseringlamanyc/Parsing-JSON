@@ -50,4 +50,20 @@ class Parsing_Json_Using_BundleTests: XCTestCase {
         }
     }
     
+    func testParseJSONFromBundle() {
+        // arrange
+        let bundle = Bundle.main
+        let fileName = "presidents"  // name of the json file
+        let firstBlackPresident = "Barack Obama"
+        
+        // act
+        do {
+            let presidents = try bundle.parseJSON(name: fileName)
+            // assert
+            XCTAssertEqual(firstBlackPresident, presidents[43].name)
+        } catch {
+            XCTFail("decoding error: \(error)")
+        }
+    }
+    
 }

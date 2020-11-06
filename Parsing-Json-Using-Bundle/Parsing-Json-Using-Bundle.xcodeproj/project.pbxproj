@@ -16,6 +16,7 @@
 		847349152554E844009E7C66 /* presidents.json in Resources */ = {isa = PBXBuildFile; fileRef = 847349142554E844009E7C66 /* presidents.json */; };
 		847349182554E89B009E7C66 /* President.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847349172554E89B009E7C66 /* President.swift */; };
 		847349212554E9E1009E7C66 /* Parsing_Json_Using_BundleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847349202554E9E1009E7C66 /* Parsing_Json_Using_BundleTests.swift */; };
+		8473492B2554EC61009E7C66 /* Bundle+Parsing JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473492A2554EC61009E7C66 /* Bundle+Parsing JSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		8473491E2554E9E1009E7C66 /* Parsing-Json-Using-BundleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Parsing-Json-Using-BundleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		847349202554E9E1009E7C66 /* Parsing_Json_Using_BundleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing_Json_Using_BundleTests.swift; sourceTree = "<group>"; };
 		847349222554E9E1009E7C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8473492A2554EC61009E7C66 /* Bundle+Parsing JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Parsing JSON.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				847349052554E81F009E7C66 /* Main.storyboard */,
 				847349142554E844009E7C66 /* presidents.json */,
 				847349172554E89B009E7C66 /* President.swift */,
+				8473492A2554EC61009E7C66 /* Bundle+Parsing JSON.swift */,
 				847349082554E821009E7C66 /* Assets.xcassets */,
 				8473490A2554E821009E7C66 /* LaunchScreen.storyboard */,
 				8473490D2554E821009E7C66 /* Info.plist */,
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				847349182554E89B009E7C66 /* President.swift in Sources */,
+				8473492B2554EC61009E7C66 /* Bundle+Parsing JSON.swift in Sources */,
 				847349042554E81F009E7C66 /* ViewController.swift in Sources */,
 				847349002554E81F009E7C66 /* AppDelegate.swift in Sources */,
 				847349022554E81F009E7C66 /* SceneDelegate.swift in Sources */,

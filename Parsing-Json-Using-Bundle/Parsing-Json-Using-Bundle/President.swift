@@ -11,9 +11,9 @@ struct President: Decodable {
     let number: Int
     let name: String
     let birthYear: Int
-    let deathYear: Int
+    let deathYear: Int?
     let tookOffice: String
-    let leftOffice: String
+    let leftOffice: String?
     let party: String
     
     private enum CodingKeys: String, CodingKey {
