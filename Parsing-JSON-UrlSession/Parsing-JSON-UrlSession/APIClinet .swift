@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 enum ApiError: Error {
     case badURL(String)
@@ -21,8 +22,8 @@ class APIClient {
     // closure (reference) - capture the value of our network call
     
     public func fetchData(completionHandler: @escaping (Result<[Station], ApiError>) -> ()) {
-       let endpointURL = "https://gbfs.citibikenyc.com/gbfs/en/station_information.json"
-    
+        let endpointURL = "https://gbfs.citibikenyc.com/gbfs/en/station_information.json"
+        
         // 1)
         // need URL - to create network request
         guard let url = URL(string: endpointURL) else {
@@ -57,4 +58,23 @@ class APIClient {
         dataTask.resume() // suspended state until resumed 
     }
     
+    
+    // MARK:- Combine
+    
+    // Combine works with publishers and subscribers
+    // Publishers - are values emiited over time
+    // Subscribers - receives values and can perform operations on those values (eg map, filter, sort etc..)
+    
+    func fetchData() throws -> AnyPublisher<[Station], Error> {
+        let endpoint = "https://gbfs.citibikenyc.com/gbfs/en/station_information.json"
+        guard let url = URL(string: endpoint) else {
+            throw ApiError.badURL(endpoint)
+        }
+        return URLSession.shared.dataTaskPublisher(for: url)
+            .map(\.data)
+            .decode(type: ResultWrapper.self, decoder: JSONDecoder())
+            .map { $0.data.stations }
+            .receive(on: DispatchQueue.main)
+            .eraseToAnyPublisher()
+    }
 }

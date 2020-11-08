@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 class StationViewController: UIViewController {
     
@@ -21,10 +22,13 @@ class StationViewController: UIViewController {
     
     private var dataSource: DataSource!
     
+    private var subscriptions: Set<AnyCancellable> = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Citi Bike Stations"
-        fetchData()
+       // fetchData()
+        fetchDataCombine()
         configureDataSource()
     }
     
@@ -39,6 +43,25 @@ class StationViewController: UIViewController {
                     self?.updateSnapshot(stations: stations)
                 }
             }
+        }
+    }
+    
+    private func fetchDataCombine() {
+        /*
+         sink - receives values
+         assign - binds a value to a property ot UI element
+         */
+        do {
+            let _ = try apiClient.fetchData()
+                .sink(receiveCompletion: { (completion) in
+                    print(completion)
+                }, receiveValue: { [weak self] (stations) in
+                    self?.updateSnapshot(stations: stations)
+                })
+            // store subscription
+                .store(in: &subscriptions)
+        } catch {
+            print(error)
         }
     }
     
